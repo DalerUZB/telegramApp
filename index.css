@@ -44,10 +44,11 @@ header .images img {
     display: flex;
     align-items: center;
     height: 100%;
-    background-image: url(./background/thumb-1920-1152265\ 10.svg);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThPjDoiH3DLcb7GBvlO2DmcFVfcTJeSHStJ5CU49sa&s);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: 50% 50%;
+    background-size: cover;
 }
 
 .left-div {
@@ -197,7 +198,150 @@ header .images img {
 .right-div .right-header {
     display: flex;
     align-items: center;
-    background: #ffffff;
+    flex-wrap: wrap;
+    justify-content: space-between;
     height: 83px;
     width: 100%;
+    background: rgba(58, 58, 58, 0.3);
+    border-radius: 7px 0px 0px 0px;
+    padding: 0 44px 0 9px;
+}
+.info-chat {
+    display: flex;
+    align-items: center;
+}
+.chat-image-div {
+    width: 50px;
+    height: 50px;
+}
+.chat-image-div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.chat-div-title {
+    display: flex;
+    flex-direction: column;
+    margin: 0 8px;
+}
+.chat-div-title span:nth-child(1) {
+    height: 21px;
+    left: 60px;
+    right: 0px;
+    top: calc(50% - 21px / 2 - 10.5px);
+    font-family: "Segoe UI Variable Static Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: #3a3a3a;
+    border-radius: 2px;
+}
+.chat-div-title span:nth-child(2) {
+    height: 16px;
+    left: 61px;
+    right: 30px;
+    top: calc(50% - 16px / 2 + 10px);
+    font-family: "Segoe UI Variable Static Small";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #dcdada;
+    border-radius: 2px;
+}
+.wrapper-circle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: #4e4d4d;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.circle img {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle-3 img {
+    width: 15%;
+}
+
+.div-wrapper-components {
+    overflow: auto;
+    max-height: 70%;
+    min-height: calc(100% - 81.7px);
+    padding-left: 43px;
+}
+
+.div-wrapper-components::-webkit-scrollbar {
+    border: 1px solid black;
+    width: 10px;
+    border-radius: 10px;
+    background: #202020;
+}
+.div-wrapper-components::-webkit-scrollbar-thumb {
+    width: 2px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5442);
+    border-radius: 9999px;
+}
+.wrapper-info-component {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 8px;
+}
+
+.wrapper-info-component .person img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.person {
+    margin-right: 7px;
+}
+.wrapper-div-messages {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 10px;
+    gap: 8px;
+    width: 483px;
+    height: 39px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px 14px 14px 14px;
+}
+.wrapper-div-messages span:nth-child(1) {
+    width: 406px;
+    height: 19px;
+    font-family: "Segoe UI Variable Static Text";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.wrapper-div-messages span:nth-child(2) {
+    width: 49px;
+    height: 14px;
+    font-family: "Segoe UI Variable Static Small";
+    font-style: normal;
+    font-weight: 350;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: #a1aab3;
 }
